@@ -11,7 +11,7 @@ class App extends Component {
     this.state = {
       articles: [],
       categories: [],
-      apiUrl: 'https://newsapi.org/v2/everything?q=technology&apiKey=b153da8d70c3481b94272477c52b0f52'
+      apiUrl: 'https://newsapi.org/v2/everything?q=technology&apiKey={API_KEY}'
     }
   }
 
@@ -43,7 +43,6 @@ class App extends Component {
 
   render() {
     const articles = this.state.articles.articles
-    const totalArticles = this.state.articles.totalResults
     const categories = this.state.categories
     let newsCard;
     let categoryBtn;
